@@ -1,7 +1,7 @@
 {
   "name": "shopping-app",
   "version": "1.0.0",
-  "description": "A fake shopping app where you can \"buy\" snacks.",
+  "description": "A fake shopping app.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

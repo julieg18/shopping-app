@@ -1,2 +1,3 @@
 # shopping-app
-A fake shopping app where you can "buy" snacks.
+
+A fake shopping app.
