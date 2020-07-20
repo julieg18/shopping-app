@@ -7,7 +7,13 @@ module.exports = {
     publicPath: '/shopping-app/',
   },
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: '/node_modules/',
+      },
+    ],
   },
   plugins: [],
 };
