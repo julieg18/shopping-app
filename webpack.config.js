@@ -8,6 +8,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/shopping-app/',
   },
+  devServer: {
+    port: 8080,
+    openPage: 'shopping-app/',
+    open: true,
+  },
   module: {
     rules: [
       {
