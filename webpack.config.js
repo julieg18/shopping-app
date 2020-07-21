@@ -8,10 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/shopping-app/',
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    port: 3000,
-  },
   module: {
     rules: [
       {
@@ -35,6 +31,10 @@ module.exports = {
           },
           'postcss-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|gif|woff2|woff)$/,
+        loader: 'file-loader',
       },
     ],
   },
