@@ -1,0 +1,15 @@
+.nav-bar__cart-button {
+  margin-right: 15px;
+  display: flex;
+  padding: 0;
+  font-size: 30px;
+  background: none;
+  border: none;
+  transform: scale(1);
+  transition: transform ease-in-out 0.2s;
+}
+
+.nav-bar__cart-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

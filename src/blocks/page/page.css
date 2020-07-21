@@ -1,5 +1,6 @@
 .page {
   font-family: 'Inter', sans-serif;
+  background-color: #edf5e0;
 }
 
 @media (min-width: 1280px) {

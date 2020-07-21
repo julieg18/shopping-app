@@ -1,0 +1,11 @@
+@import url(./__title/nav-bar__title.css);
+@import url(./__cart-link/nav-bar__cart-link.css);
+@import url(./__cart-button/nav-bar__cart-button.css);
+
+.nav-bar {
+  text-align: center;
+  padding-top: 15px;
+  display: grid;
+  grid-template-areas: '. title cart-link';
+  grid-template-columns: repeat(3, 1fr);
+}

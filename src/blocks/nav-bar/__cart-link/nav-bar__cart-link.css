@@ -1,0 +1,11 @@
+.nav-bar__cart-link {
+  grid-area: cart-link;
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+  .nav-bar__cart-link {
+    align-self: center;
+  }
+}
