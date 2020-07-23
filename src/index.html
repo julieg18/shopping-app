@@ -18,6 +18,55 @@
         </button>
       </a>
     </nav>
+    <section class="filter-products">
+      <div class="filter-products__options">
+        <label class="filter-products__option-label" for="gluten-free">
+          <input
+            name="filter-products-options"
+            type="checkbox"
+            class="filter-products__option-input"
+            id="#gluten-free"
+            value="gluten-free"
+            checked
+          />
+          <button class="filter-products__option">Gluten Free</button>
+        </label>
+        <label class="filter-products__option-label" for="sweet">
+          <input
+            name="filter-products-options"
+            type="checkbox"
+            class="filter-products__option-input"
+            id="#sweet"
+            value="sweet"
+          />
+          <button class="filter-products__option">Sweet</button>
+        </label>
+        <label class="filter-products__option-label" for="salty">
+          <input
+            name="filter-products-options"
+            type="checkbox"
+            class="filter-products__option-input"
+            id="#salty"
+            value="salty"
+          />
+          <button class="filter-products__option">Salty</button>
+        </label>
+      </div>
+      <div class="filter-products__search-bar">
+        <input
+          placeholder="Search Products"
+          class="filter-products__search-input"
+          type="search"
+          name="search-products"
+          id="search-products"
+        />
+        <span
+          class="iconify filter-products__search-icon"
+          data-inline="false"
+          data-icon="ant-design:search-outlined"
+        ></span>
+      </div>
+    </section>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>
 </html>

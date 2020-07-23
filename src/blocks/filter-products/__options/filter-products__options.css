@@ -1,0 +1,10 @@
+.filter-products__options {
+  display: flex;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .filter-products__options {
+    margin-top: 0;
+  }
+}

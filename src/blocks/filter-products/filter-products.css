@@ -1,0 +1,21 @@
+@import url(./__options/filter-products__options.css);
+@import url(./__option-input/filter-products__option-input.css);
+@import url(./__option/filter-products__option.css);
+@import url(./__search-bar/filter-products__search-bar.css);
+@import url(./__search-bar/_focused/filter-products__search-bar_focused.css);
+@import url(./__search-input/filter-products__search-input.css);
+@import url(./__search-icon/filter-products__search-icon.css);
+
+.filter-products {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .filter-products {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
