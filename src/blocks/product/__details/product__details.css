@@ -1,0 +1,5 @@
+.product__details {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}

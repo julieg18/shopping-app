@@ -1,0 +1,17 @@
+.product__add-to-cart-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #afc97e;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.product__add-to-cart-btn:hover {
+  cursor: pointer;
+  background-color: rgba(175, 201, 126, 0.8);
+}

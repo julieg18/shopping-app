@@ -8,7 +8,7 @@
   <body class="page">
     <nav class="nav-bar">
       <h1 class="nav-bar__title">Shopping App</h1>
-      <a href="./cart.html" class="nav-bar__cart-link">
+      <a tabindex="-1" href="./cart.html" class="nav-bar__cart-link">
         <button class="nav-bar__cart-button">
           <span
             class="iconify"
@@ -27,7 +27,7 @@
             class="filter-products__option-input"
             id="#gluten-free"
             value="gluten-free"
-            checked
+            tabindex="-1"
           />
           <button class="filter-products__option">Gluten Free</button>
         </label>
@@ -38,6 +38,7 @@
             class="filter-products__option-input"
             id="#sweet"
             value="sweet"
+            tabindex="-1"
           />
           <button class="filter-products__option">Sweet</button>
         </label>
@@ -48,6 +49,7 @@
             class="filter-products__option-input"
             id="#salty"
             value="salty"
+            tabindex="-1"
           />
           <button class="filter-products__option">Salty</button>
         </label>
@@ -67,6 +69,160 @@
         ></span>
       </div>
     </section>
+    <section class="products">
+      <ul class="products__list">
+        <li class="product">
+          <img
+            src="https://images.unsplash.com/photo-1563635707451-c427db1e1f9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            alt="almonds"
+            class="product__image"
+          />
+          <h2 class="product__name">Almonds</h2>
+          <div class="product__details">
+            <p class="product__price-and-size">
+              <span class="product__price">$1.25</span>
+              <span class="product__size">(1.25oz bag)</span>
+            </p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_increase"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:plus-outlined"
+              ></span>
+            </button>
+            <p class="product__amount-num">1</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_decrease"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:minus-outlined"
+              ></span>
+            </button>
+          </div>
+          <p class="product__description">
+            The almond is the edible kernel of the fruit of the sweet almond
+            tree.
+          </p>
+          <button class="product__add-to-cart-btn">Add To Cart</button>
+        </li>
+        <li class="product">
+          <img
+            src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            alt="popcorn"
+            class="product__image"
+          />
+          <h2 class="product__name">Popcorn</h2>
+          <div class="product__details">
+            <p class="product__price-and-size">
+              <span class="product__price">$1.00</span>
+              <span class="product__size">(1oz bag)</span>
+            </p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_increase"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:plus-outlined"
+              ></span>
+            </button>
+            <p class="product__amount-num">1</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_decrease"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:minus-outlined"
+              ></span>
+            </button>
+          </div>
+          <p class="product__description">
+            Popcorn, a variety of corn (maize), the kernels of which, when
+            exposed to heat or microwaves, are exploded into large fluffy
+            masses.
+          </p>
+          <button class="product__add-to-cart-btn">Add To Cart</button>
+        </li>
+        <li class="product">
+          <img
+            src="https://images.unsplash.com/photo-1566577405735-18f35aa6d79f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+            alt="caramel corn"
+            class="product__image"
+          />
+          <h2 class="product__name">Caramel Corn</h2>
+          <div class="product__details">
+            <p class="product__price-and-size">
+              <span class="product__price">$1.50</span>
+              <span class="product__size">(1oz bag)</span>
+            </p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_increase"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:plus-outlined"
+              ></span>
+            </button>
+            <p class="product__amount-num">1</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_decrease"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:minus-outlined"
+              ></span>
+            </button>
+          </div>
+          <p class="product__description">
+            Caramel corn or caramel popcorn is a confection made of popcorn
+            coated with a sugar or molasses based caramel candy shell that is
+            normally less than 0.1cm thick.
+          </p>
+          <button class="product__add-to-cart-btn">Add To Cart</button>
+        </li>
+      </ul>
+    </section>
+
+    <template id="product">
+      <li class="product">
+        <img alt="" class="product__image" />
+        <h2 class="product__name"></h2>
+        <div class="product__details">
+          <p class="product__price-and-size">
+            <span class="product__price"></span>
+            <span class="product__size"></span>
+          </p>
+          <button
+            class="product__change-amount-btn product__change-amount-btn_action_increase"
+          >
+            <span
+              class="iconify"
+              data-inline="false"
+              data-icon="ant-design:plus-outlined"
+            ></span>
+          </button>
+          <p class="product__amount-num"></p>
+          <button
+            class="product__change-amount-btn product__change-amount-btn_action_decrease"
+          >
+            <span
+              class="iconify"
+              data-inline="false"
+              data-icon="ant-design:minus-outlined"
+            ></span>
+          </button>
+        </div>
+        <p class="product__description"></p>
+        <button class="product__add-to-cart-btn">Add To Cart</button>
+      </li>
+    </template>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>
 </html>

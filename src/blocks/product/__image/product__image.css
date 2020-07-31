@@ -1,0 +1,12 @@
+.product__image {
+  width: 100%;
+  align-self: stretch;
+  object-fit: cover;
+  height: 188px;
+}
+
+@media (min-width: 768px) {
+  .product__image {
+    height: 150px;
+  }
+}

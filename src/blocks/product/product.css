@@ -1,0 +1,25 @@
+@import url(./__image/product__image.css);
+@import url(./__name/product__name.css);
+@import url(./__details/product__details.css);
+@import url(./__price-and-size/product__price-and-size.css);
+@import url(./__price/product__price.css);
+@import url(./__size/product__size.css);
+@import url(./__change-amount-btn/product__change-amount-btn.css);
+@import url(./__change-amount-btn/_action/product__change-amount-btn_action_increase.css);
+@import url(./__amount-num/product__amount-num.css);
+@import url(./__description/product__description.css);
+@import url(./__add-to-cart-btn/product__add-to-cart-btn.css);
+
+.product {
+  width: calc(100% - 30px);
+  margin: 15px auto 0;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .product {
+    margin: 0;
+  }
+}
