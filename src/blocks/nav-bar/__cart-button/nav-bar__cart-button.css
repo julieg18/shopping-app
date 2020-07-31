@@ -1,6 +1,7 @@
 .nav-bar__cart-button {
   margin-right: 15px;
   display: flex;
+  position: relative;
   padding: 0;
   font-size: 30px;
   background: none;

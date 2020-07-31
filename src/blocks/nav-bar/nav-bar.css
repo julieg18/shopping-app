@@ -1,6 +1,7 @@
 @import url(./__title/nav-bar__title.css);
 @import url(./__cart-link/nav-bar__cart-link.css);
 @import url(./__cart-button/nav-bar__cart-button.css);
+@import url(./__cart-amount/nav-bar__cart-amount.css);
 
 .nav-bar {
   text-align: center;
