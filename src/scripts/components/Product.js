@@ -8,8 +8,6 @@ class Product {
     imageAttr,
     imageSrc,
     addToCart,
-    decreaseCartAmount,
-    increaseCartAmount,
   }) {
     this._id = id;
     this._name = name;
@@ -19,8 +17,6 @@ class Product {
     this._imageAttr = imageAttr;
     this._imageSrc = imageSrc;
     this._addToCart = addToCart;
-    this._decreaseCartAmount = decreaseCartAmount;
-    this._increaseCartAmount = increaseCartAmount;
     this._productTemplate = document.querySelector('#product').content;
   }
 
