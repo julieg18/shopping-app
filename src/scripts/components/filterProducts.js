@@ -10,6 +10,14 @@ function triggerInputClick(e) {
   input.click();
 }
 
+function handleSearchInputFocus() {
+  searchBar.classList.add('filter-products__search-bar_focused');
+}
+
+function handleSearchInputBlur() {
+  searchBar.classList.remove('filter-products__search-bar_focused');
+}
+
 const filterProducts = {
   setupEventListeners({ handleSearchInput, handleOptionInputClick }) {
     filterProductsLabels.forEach((label) => {
@@ -19,12 +27,8 @@ const filterProducts = {
       input.addEventListener('click', handleOptionInputClick);
     });
 
-    searchInput.addEventListener('focus', () => {
-      searchBar.classList.add('filter-products__search-bar_focused');
-    });
-    searchInput.addEventListener('blur', () => {
-      searchBar.classList.remove('filter-products__search-bar_focused');
-    });
+    searchInput.addEventListener('focus', handleSearchInputFocus);
+    searchInput.addEventListener('blur', handleSearchInputBlur);
     searchInput.addEventListener('input', handleSearchInput);
   },
 };
