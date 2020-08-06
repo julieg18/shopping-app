@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 import '../../pages/index.css';
 import cartButtonAmount from '../components/cartButtonAmount';
-import filterProducts from '../components/filterProducts';
+import filterProductsInputs from '../components/filterProductsInputs';
 import Product from '../components/Product';
 import { productsInfo } from '../utils/constants';
 
@@ -21,7 +21,7 @@ productsInfo.forEach((productInfo) => {
   newProduct.createProduct();
 });
 
-filterProducts.setupEventListeners({
+filterProductsInputs.setupEventListeners({
   handleSearchInput,
   handleOptionInputClick,
 });

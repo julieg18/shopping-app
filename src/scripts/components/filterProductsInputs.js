@@ -18,7 +18,7 @@ function handleSearchInputBlur() {
   searchBar.classList.remove('filter-products__search-bar_focused');
 }
 
-const filterProducts = {
+const filterProductsInputs = {
   setupEventListeners({ handleSearchInput, handleOptionInputClick }) {
     filterProductsLabels.forEach((label) => {
       label.addEventListener('click', triggerInputClick);
@@ -33,4 +33,4 @@ const filterProducts = {
   },
 };
 
-export default filterProducts;
+export default filterProductsInputs;
