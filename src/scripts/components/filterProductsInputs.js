@@ -24,7 +24,9 @@ const filterProductsInputs = {
       label.addEventListener('click', triggerInputClick);
     });
     filterProductsCheckboxInputs.forEach((input) => {
-      input.addEventListener('click', handleOptionInputClick);
+      input.addEventListener('click', () =>
+        handleOptionInputClick(filterProductsCheckboxInputs),
+      );
     });
 
     searchInput.addEventListener('focus', handleSearchInputFocus);

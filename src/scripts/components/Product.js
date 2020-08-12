@@ -4,6 +4,7 @@ class Product {
     name,
     price,
     size,
+    tags,
     description,
     imageAttr,
     imageSrc,
@@ -13,6 +14,7 @@ class Product {
     this._name = name;
     this._price = price;
     this._size = size;
+    this._tags = tags;
     this._description = description;
     this._imageAttr = imageAttr;
     this._imageSrc = imageSrc;
@@ -67,6 +69,20 @@ class Product {
     this._product
       .querySelector('.product__change-amount-btn_action_decrease')
       .addEventListener('click', () => this._handleAmountBtnClick('decrease'));
+  }
+
+  filter({ searchInput, tags }) {
+    const matchesSearchInput = this._name
+      .toLowerCase()
+      .replace(/ /g, '')
+      .startsWith(searchInput.toLowerCase().replace(/ /g, ''));
+    const matchesTags = tags.every((tag) => this._tags.includes(tag));
+
+    if (matchesSearchInput && matchesTags) {
+      this._product.classList.remove('product_hide');
+    } else {
+      this._product.classList.add('product_hide');
+    }
   }
 
   createProduct() {
