@@ -29,7 +29,7 @@ class Product {
 
     this._product.querySelector(
       '.product__change-amount-btn_action_decrease',
-    ).disabled = Number(amountNum.textContent) === 0;
+    ).disabled = Number(amountNum.textContent) === 1;
     this._product.querySelector(
       '.product__change-amount-btn_action_increase',
     ).disabled = Number(amountNum.textContent) === 99;

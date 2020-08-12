@@ -20,6 +20,11 @@
   background-color: rgba(175, 201, 126, 0.8);
 }
 
+.product__change-amount-btn:disabled {
+  background-color: #bebebe;
+  cursor: default;
+}
+
 @media (min-width: 768px) {
   .product__change-amount-btn {
     width: 20px;
