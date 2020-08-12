@@ -22,5 +22,8 @@ module.exports = {
         enforceInMethodNames: false,
       },
     ],
+    'implicit-arrow-linebreak': 'off',
+    'function-paren-newline': 'off',
+    'operator-linebreak': 'off',
   },
 };
