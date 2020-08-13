@@ -1,5 +1,7 @@
 @import url(./_hide/product_hide.css);
 @import url(./__image/product__image.css);
+@import url(./__image-attr/product__image-attr.css);
+@import url(./__image-attr-link/product__image-attr-link.css);
 @import url(./__name/product__name.css);
 @import url(./__details/product__details.css);
 @import url(./__price-and-size/product__price-and-size.css);

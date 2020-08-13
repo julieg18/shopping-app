@@ -20,6 +20,9 @@ const productsInfo = [
     imageAttr: {
       artistHref:
         'https://unsplash.com/@inteligencia_eco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/almonds?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
       artist: 'Ignacio F.',
     },
     imageSrc:
@@ -37,6 +40,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@rssemfam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Russ Ward',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/caramel-corn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1566577405735-18f35aa6d79f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',
@@ -53,6 +59,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@charissek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Charisse Kenion',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/chocolate-bar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1511381878266-349693efb20d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',
@@ -68,7 +77,10 @@ const productsInfo = [
     imageAttr: {
       artistHref:
         'https://unsplash.com/@foodess?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText',
-      artist: 'Food Photographer | Jennifer Pallian',
+      artist: 'Jennifer Pallian',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/cookie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',
@@ -85,6 +97,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@gregjeanneau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Greg Jeanneau',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/crackers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1475585925456-280a1963b39f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=586&q=80',
@@ -101,6 +116,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@rachaelgorjestani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Rachael Gorjestani',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/granola?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1514946379532-90281f815889?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
@@ -117,6 +135,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@jadew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Jade Wulfraat',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/granola-bar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1464195157370-5b596406ff80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',
@@ -133,6 +154,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@georgiavagim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Georgia Vagim',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/popcorn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',
@@ -149,6 +173,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@uncled?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'David Nuescheler',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/pretzels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1540569222266-a08afebb00b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
@@ -165,6 +192,9 @@ const productsInfo = [
       artistHref:
         'https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
       artist: 'Markus Winkler',
+      imageSrcLink:
+        'https://unsplash.com/s/photos/tortilla-chips?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+      imageSrcText: 'Unsplash',
     },
     imageSrc:
       'https://images.unsplash.com/photo-1589357708707-6dac3c25a428?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',

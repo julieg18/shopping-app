@@ -57,6 +57,17 @@ class Product {
     this._product.querySelector(
       '.product__description',
     ).textContent = this._description;
+    const imageArtistLink = this._product.querySelector(
+      '.product__image-attr-link_content_artist-link',
+    );
+    imageArtistLink.href = this._imageAttr.artistHref;
+    imageArtistLink.textContent = this._imageAttr.artist;
+
+    const imageSrcLink = this._product.querySelector(
+      '.product__image-attr-link_content_src-link',
+    );
+    imageSrcLink.href = this._imageAttr.imageSrcLink;
+    imageSrcLink.textContent = this._imageAttr.imageSrcText;
   }
 
   _setUpEventListeners() {
