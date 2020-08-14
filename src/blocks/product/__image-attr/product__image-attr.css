@@ -3,4 +3,9 @@
   color: grey;
   display: block;
   text-align: right;
+  width: calc(100% - 30px);
+  margin-left: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

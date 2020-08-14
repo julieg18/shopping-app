@@ -49,7 +49,11 @@ class Product {
     const img = this._product.querySelector('.product__image');
     img.src = this._imageSrc;
     img.alt = this._name.toLowerCase();
-    this._product.querySelector('.product__name').textContent = this._name;
+
+    const productNameEl = this._product.querySelector('.product__name');
+    productNameEl.textContent = this._name;
+    productNameEl.title = this._name;
+
     this._product.querySelector('.product__price').textContent = this._price;
     this._product.querySelector(
       '.product__size',
@@ -57,13 +61,17 @@ class Product {
     this._product.querySelector(
       '.product__description',
     ).textContent = this._description;
-    const imageArtistLink = this._product.querySelector(
+
+    const imageAttrEl = this._product.querySelector('.product__image-attr');
+    imageAttrEl.title = `Photo by ${this._imageAttr.artist} on ${this._imageAttr.imageSrcText}`;
+
+    const imageArtistLink = imageAttrEl.querySelector(
       '.product__image-attr-link_content_artist-link',
     );
     imageArtistLink.href = this._imageAttr.artistHref;
     imageArtistLink.textContent = this._imageAttr.artist;
 
-    const imageSrcLink = this._product.querySelector(
+    const imageSrcLink = imageAttrEl.querySelector(
       '.product__image-attr-link_content_src-link',
     );
     imageSrcLink.href = this._imageAttr.imageSrcLink;

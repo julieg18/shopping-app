@@ -3,3 +3,12 @@
   margin: 10px 0 0;
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .product__name {
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% - 30px);
+    text-overflow: ellipsis;
+  }
+}
