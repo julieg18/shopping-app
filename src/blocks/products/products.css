@@ -1,4 +1,6 @@
 @import url(./__list/products__list.css);
+@import url(./__no-results-text/products__no-results-text.css);
+@import url(./__no-results-text/_hidden/products__no-results-text_hidden.css);
 
 .products {
   margin: 15px 15px 0;

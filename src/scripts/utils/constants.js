@@ -8,6 +8,10 @@ const filterProductsCheckboxInputs = Array.from(
 const searchBar = document.querySelector('.filter-products__search-bar');
 const searchInput = searchBar.querySelector('.filter-products__search-input');
 
+const productsNoResultText = document.querySelector(
+  '.products__no-results-text',
+);
+
 const productsInfo = [
   {
     id: '121',
@@ -207,5 +211,6 @@ export {
   filterProductsCheckboxInputs,
   searchBar,
   searchInput,
+  productsNoResultText,
   productsInfo,
 };
