@@ -3,10 +3,13 @@ import '../../pages/index.css';
 import cartButtonAmount from '../components/cartButtonAmount';
 import filterProductsInputs from '../components/filterProductsInputs';
 import Product from '../components/Product';
+import Notification from '../components/Notification';
 import { productsInfo, productsNoResultText } from '../utils/constants';
+import { formatNumberToCurrency } from '../utils/utils';
+
+let cartSubtotal = 0;
 
 let productEls;
-
 const products = [];
 const appliedProductFilters = {
   searchInput: '',
@@ -44,8 +47,24 @@ function handleOptionInputClick(filterProductsCheckboxInputs) {
   checkForNoProductResults();
 }
 
-function addToCart({ amount }) {
+function addToCart({ amount, id }) {
   cartButtonAmount.increaseAmount(amount);
+
+  cartSubtotal +=
+    Number(productsInfo.find((product) => product.id === id).price.slice(1)) *
+    amount;
+
+  const addToCartNotification = new Notification({
+    type: 'info',
+    imageName: 'shopping-cart',
+  });
+  addToCartNotification.createNotification({
+    text: `${amount} item${amount === 1 ? '' : 's'} added to cart.`,
+    subtext: `Cart Subtotal: ${formatNumberToCurrency(cartSubtotal)}`,
+  });
+  setTimeout(() => {
+    addToCartNotification.showNotification();
+  }, 0);
 }
 
 productsInfo.forEach((productInfo) => {
