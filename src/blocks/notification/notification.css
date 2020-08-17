@@ -1,0 +1,24 @@
+@import url(./__exit-btn/notification__exit-btn.css);
+@import url(./__image/notification__image.css);
+@import url(./__text/notification__text.css);
+@import url(./__subtext/notification__subtext.css);
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  left: -270px;
+  padding: 8px;
+  display: grid;
+  z-index: 1;
+  grid-template-columns: 50px auto auto;
+  grid-template-areas: 'image text exit-btn' 'image subtext subtext';
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: left ease-in-out 0.4s;
+}
+
+.notification:hover {
+  cursor: pointer;
+}

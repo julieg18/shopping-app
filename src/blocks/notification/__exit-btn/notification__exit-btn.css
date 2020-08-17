@@ -1,0 +1,19 @@
+.notification__exit-btn {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/exit-icon.svg);
+  grid-area: exit-btn;
+  margin-left: 10px;
+  justify-self: end;
+  transition: transform 0.2s ease-in-out;
+}
+
+.notification__exit-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

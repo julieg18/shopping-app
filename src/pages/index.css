@@ -1,6 +1,9 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(https://rsms.me/inter/inter.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/notification/notification.css);
+@import url(../blocks/notification/_type/notification_type_info.css);
+@import url(../blocks//notification/_visible/notification_visible.css);
 @import url(../blocks/nav-bar/nav-bar.css);
 @import url(../blocks/filter-products/filter-products.css);
 @import url(../blocks/products/products.css);

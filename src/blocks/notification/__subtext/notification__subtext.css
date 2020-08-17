@@ -1,0 +1,8 @@
+.notification__subtext {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #fff;
+  grid-area: subtext;
+  justify-self: end;
+  align-self: end;
+}

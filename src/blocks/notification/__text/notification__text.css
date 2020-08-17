@@ -1,0 +1,6 @@
+.notification__text {
+  font-size: 0.8rem;
+  color: #fff;
+  grid-area: text;
+  margin: 5px 0 0 5px;
+}
