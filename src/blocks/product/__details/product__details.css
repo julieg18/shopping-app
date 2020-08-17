@@ -1,5 +1,5 @@
 .product__details {
-  display: flex;
   align-items: center;
+  display: flex;
   margin-top: 5px;
 }

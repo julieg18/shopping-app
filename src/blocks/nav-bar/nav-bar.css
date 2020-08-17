@@ -4,9 +4,9 @@
 @import url(./__cart-amount/nav-bar__cart-amount.css);
 
 .nav-bar {
-  text-align: center;
-  padding-top: 15px;
   display: grid;
   grid-template-areas: '. title cart-link';
   grid-template-columns: repeat(3, 1fr);
+  padding-top: 15px;
+  text-align: center;
 }

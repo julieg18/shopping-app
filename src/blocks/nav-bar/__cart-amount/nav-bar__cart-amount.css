@@ -1,15 +1,15 @@
 .nav-bar__cart-amount {
-  position: absolute;
-  top: -1px;
-  right: -8px;
-  font-size: 0.8rem;
+  align-items: center;
   background-color: #afc97e;
-  z-index: 1;
   border-radius: 15px;
+  color: #fff;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
   min-width: 15px;
   padding: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  position: absolute;
+  right: -8px;
+  top: -1px;
+  z-index: 1;
 }

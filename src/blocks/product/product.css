@@ -14,11 +14,11 @@
 @import url(./__add-to-cart-btn/product__add-to-cart-btn.css);
 
 .product {
-  width: calc(100% - 30px);
-  margin: 15px auto 0;
   background-color: #fff;
   border-radius: 10px;
+  margin: 15px auto 0;
   padding: 15px;
+  width: calc(100% - 30px);
 }
 
 @media (min-width: 768px) {

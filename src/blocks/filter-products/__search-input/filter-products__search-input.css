@@ -1,18 +1,18 @@
 .filter-products__search-input {
-  width: 100%;
-  border: none;
   border-radius: 10px 0 0 10px;
-  padding-left: 5px;
+  border: none;
   outline: none;
+  padding-left: 5px;
+  width: 100%;
 }
 
 .filter-products__search-input::-webkit-search-cancel-button {
-  cursor: pointer;
   appearance: none;
   background-image: url(https://api.iconify.design/bx:bx-x-circle.svg?color=black);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  height: 20px;
   opacity: 0.5;
   width: 20px;
-  height: 20px;
-  background-size: cover;
-  background-position: center;
 }

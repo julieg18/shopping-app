@@ -1,11 +1,11 @@
 .product__image-attr {
-  font-size: 0.7rem;
   color: grey;
   display: block;
-  text-align: right;
-  width: calc(100% - 30px);
+  font-size: 0.7rem;
   margin-left: auto;
   overflow: hidden;
-  white-space: nowrap;
+  text-align: right;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 30px);
 }

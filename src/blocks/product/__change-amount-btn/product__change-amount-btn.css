@@ -1,23 +1,23 @@
 .product__change-amount-btn {
+  align-items: center;
+  background-color: #afc97e;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  height: 25px;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  width: 25px;
-  height: 25px;
-  font-size: 20px;
-  color: #fff;
-  background-color: #afc97e;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 0.2s ease-in-out;
+  width: 25px;
 }
 
 .product__change-amount-btn:hover {
-  cursor: pointer;
   background-color: rgba(175, 201, 126, 0.8);
+  cursor: pointer;
 }
 
 .product__change-amount-btn:disabled {
@@ -27,8 +27,8 @@
 
 @media (min-width: 768px) {
   .product__change-amount-btn {
-    width: 20px;
-    height: 20px;
     font-size: 15px;
+    height: 20px;
+    width: 20px;
   }
 }

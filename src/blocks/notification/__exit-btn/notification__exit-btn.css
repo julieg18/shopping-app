@@ -1,16 +1,16 @@
 .notification__exit-btn {
-  width: 10px;
-  height: 10px;
   background-color: rgba(0, 0, 0, 0);
-  border: none;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(../../../images/exit-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
   grid-area: exit-btn;
-  margin-left: 10px;
+  height: 10px;
   justify-self: end;
+  margin-left: 10px;
   transition: transform 0.2s ease-in-out;
+  width: 10px;
 }
 
 .notification__exit-btn:hover {
