@@ -36,13 +36,14 @@ class Product {
   }
 
   _handleAddToCartBtnClick() {
+    const amountNum = this._product.querySelector('.product__amount-num');
     const product = {
-      amount: Number(
-        this._product.querySelector('.product__amount-num').textContent,
-      ),
+      amount: Number(amountNum.textContent),
       id: this._id,
     };
     this._addToCart(product);
+
+    amountNum.textContent = 1;
   }
 
   _placeDataInProductElement() {
