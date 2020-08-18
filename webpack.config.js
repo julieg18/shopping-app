@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { main: './src/scripts/pages/index.js' },
+  entry: {
+    index: './src/scripts/pages/index.js',
+    cart: './src/scripts/pages/cart.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/shopping-app/',
@@ -44,7 +47,16 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/index.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'cart.html',
+      template: 'src/cart.html',
+      chunks: ['cart'],
+    }),
     new MiniCssExtractPlugin(),
   ],
 };
