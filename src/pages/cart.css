@@ -1,3 +1,8 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(https://rsms.me/inter/inter.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/cart/cart.css);
+@import url(../blocks/cart-summary/cart-summary.css);
+@import url(../blocks/products/products.css);
+@import url(../blocks/products/_place/products_place_cart.css);
+@import url(../blocks/product/product.css);

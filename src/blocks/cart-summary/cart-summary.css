@@ -1,0 +1,23 @@
+@import url(./__title/cart-summary__title.css);
+@import url(./__details/cart-summary__details.css);
+@import url(./__detail/cart-summary__detail.css);
+@import url(./__detail/_name/cart-summary__detail_name_total.css);
+@import url(./__detail-name/cart-summary__detail-name.css);
+@import url(./__detail-price/cart-summary__detail-price.css);
+@import url(./__checkout-btn/cart-summary__checkout-btn.css);
+
+.cart-summary {
+  background-color: #fff;
+  bottom: 0;
+  grid-area: cart-summary;
+  padding: 15px;
+  position: sticky;
+  right: 0;
+  width: calc(100% - 30px);
+}
+
+@media (min-width: 768px) {
+  .cart-summary {
+    min-width: 250px;
+  }
+}

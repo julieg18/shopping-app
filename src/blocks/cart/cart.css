@@ -1,0 +1,9 @@
+@import url(./__title/cart__title.css);
+@import url(./__continue-shopping-link/cart__continue-shopping-link.css);
+
+@media (min-width: 768px) {
+  .cart {
+    display: grid;
+    grid-template-areas: 'title cart-summary' 'products cart-summary' 'continue-shopping-link cart-summary';
+  }
+}

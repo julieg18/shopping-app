@@ -1,4 +1,5 @@
 @import url(./__list/products__list.css);
+@import url(./__list/_place/products__list_place_cart.css);
 @import url(./__no-results-text/products__no-results-text.css);
 @import url(./__no-results-text/_hidden/products__no-results-text_hidden.css);
 

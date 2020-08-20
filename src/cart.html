@@ -3,7 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping App Cart</title>
+    <title>Shopping Cart</title>
   </head>
-  <body class="page"></body>
+  <body class="page">
+    <div class="cart">
+      <a href="#" class="cart__continue-shopping-link">← Continue Shopping </a>
+      <h1 class="cart__title">Shopping Cart</h1>
+      <section class="products products_place_cart">
+        <ul class="products__list products__list_place_cart">
+          <li class="product">
+            <img
+              alt="almonds"
+              class="product__image"
+              src="https://images.unsplash.com/photo-1563635707451-c427db1e1f9a?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60"
+            />
+            <h2 class="product__name" title="Almonds">Almonds</h2>
+            <span class="product__size">(1.25oz bag)</span>
+            <span class="product__price">$7.00</span>
+            <p class="product__price-for-each">Each: $1.25</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_increase"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:plus-outlined"
+              ></span>
+            </button>
+            <p class="product__amount-num">1</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_decrease"
+              disabled
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:minus-outlined"
+              ></span>
+            </button>
+            <button class="product__remove-btn">Remove</button>
+          </li>
+          <li class="product">
+            <img
+              alt="almonds"
+              class="product__image"
+              src="https://images.unsplash.com/photo-1563635707451-c427db1e1f9a?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60"
+            />
+            <h2 class="product__name" title="Almonds">Almonds</h2>
+            <span class="product__size">(1.25oz bag)</span>
+            <span class="product__price">$7.00</span>
+            <p class="product__price-for-each">Each: $1.25</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_increase"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:plus-outlined"
+              ></span>
+            </button>
+            <p class="product__amount-num">1</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_decrease"
+              disabled
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:minus-outlined"
+              ></span>
+            </button>
+            <button class="product__remove-btn">Remove</button>
+          </li>
+          <li class="product">
+            <img
+              alt="almonds"
+              class="product__image"
+              src="https://images.unsplash.com/photo-1563635707451-c427db1e1f9a?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60"
+            />
+            <h2 class="product__name" title="Almonds">Almonds</h2>
+            <span class="product__size">(1.25oz bag)</span>
+            <span class="product__price">$7.00</span>
+            <p class="product__price-for-each">Each: $1.25</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_increase"
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:plus-outlined"
+              ></span>
+            </button>
+            <p class="product__amount-num">1</p>
+            <button
+              class="product__change-amount-btn product__change-amount-btn_action_decrease"
+              disabled
+            >
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ant-design:minus-outlined"
+              ></span>
+            </button>
+            <button class="product__remove-btn">Remove</button>
+          </li>
+        </ul>
+      </section>
+      <section class="cart-summary">
+        <h2 class="cart-summary__title">Cart Summary</h2>
+        <ul class="cart-summary__details">
+          <li class="cart-summary__detail cart-summary__detail_name_subtotal">
+            <p class="cart-summary__detail-name">Subtotal:</p>
+            <p class="cart-summary__detail-price">$1.00</p>
+          </li>
+          <li
+            class="cart-summary__detail cart-summary__detail_name_taxes-and-fees"
+          >
+            <p class="cart-summary__detail-name">Taxes And Fees:</p>
+            <p class="cart-summary__detail-price">$1.00</p>
+          </li>
+          <li class="cart-summary__detail cart-summary__detail_name_shipping">
+            <p class="cart-summary__detail-name">Shipping:</p>
+            <p class="cart-summary__detail-price">$30.40</p>
+          </li>
+          <li class="cart-summary__detail cart-summary__detail_name_total">
+            <p class="cart-summary__detail-name">Total:</p>
+            <p class="cart-summary__detail-price">$78.69</p>
+          </li>
+        </ul>
+        <button class="cart-summary__checkout-btn">Go To Checkout</button>
+      </section>
+    </div>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>

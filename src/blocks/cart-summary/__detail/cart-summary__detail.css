@@ -1,0 +1,9 @@
+.cart-summary__detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-summary__detail:first-of-type {
+  margin-top: 15px;
+}

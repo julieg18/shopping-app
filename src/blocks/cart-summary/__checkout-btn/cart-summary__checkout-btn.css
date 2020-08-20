@@ -1,0 +1,15 @@
+.cart-summary__checkout-btn {
+  background-color: #afc97e;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 15px 0 0;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.cart-summary__checkout-btn:hover {
+  background-color: rgba(175, 201, 126, 0.8);
+  cursor: pointer;
+}
