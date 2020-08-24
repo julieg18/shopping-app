@@ -1,3 +1,17 @@
 .products_place_cart {
   grid-area: products;
 }
+
+@media (min-width: 768px) {
+  .products_place_cart {
+    overflow-y: scroll;
+    height: calc(100vh - 3.5rem - 61px);
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .products_place_cart {
+    height: calc(100vh - 3.5rem - 65px);
+  }
+}

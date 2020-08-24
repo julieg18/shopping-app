@@ -1,3 +1,17 @@
 .cart__continue-shopping-link {
   grid-area: continue-shopping-link;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .cart__continue-shopping-link {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 15px 0 15px 15px;
+  }
 }
