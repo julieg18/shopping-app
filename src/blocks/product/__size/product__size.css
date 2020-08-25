@@ -1,3 +1,28 @@
 .product__size {
   font-size: 0.8rem;
 }
+
+.product_place_cart .product__size {
+  grid-area: size;
+  margin: 0 0 0 5px;
+}
+
+@media (min-width: 425px) {
+  .product_place_cart .product__size {
+    margin: 0 0 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product_place_cart .product__size {
+    margin: 5px 0 0 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product_place_cart .product__size {
+    font-size: 1rem;
+    margin: 0 0 0 10px;
+    transform: translateY(-5px);
+  }
+}

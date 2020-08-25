@@ -1,0 +1,13 @@
+.product__price-for-each {
+  grid-area: price-for-each;
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+@media (min-width: 1024px) {
+  .product_place_cart .product__price-for-each {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+  }
+}

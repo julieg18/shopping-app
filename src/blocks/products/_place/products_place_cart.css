@@ -2,11 +2,20 @@
   grid-area: products;
 }
 
+.products_place_cart::-webkit-scrollbar {
+  width: 10px;
+}
+
+.products_place_cart::-webkit-scrollbar-thumb {
+  background-color: #afc97e;
+  border-radius: 20px;
+}
+
 @media (min-width: 768px) {
   .products_place_cart {
-    overflow-y: scroll;
     height: calc(100vh - 3.5rem - 61px);
     margin: 0 15px;
+    overflow-y: scroll;
   }
 }
 

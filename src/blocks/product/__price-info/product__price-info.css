@@ -1,0 +1,4 @@
+.product__price-info {
+  grid-area: price-info;
+  text-align: right;
+}

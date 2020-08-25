@@ -1,0 +1,19 @@
+.product__amount {
+  align-items: center;
+  display: flex;
+  grid-area: amount;
+  margin: 10px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .product__amount {
+    margin: 5px 0 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product__amount {
+    margin: 0;
+    transform: translateY(-15px);
+  }
+}

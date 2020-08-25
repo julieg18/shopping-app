@@ -32,3 +32,11 @@
     width: 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  .product_place_cart .product__change-amount-btn {
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+  }
+}

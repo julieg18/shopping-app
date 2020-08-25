@@ -12,6 +12,10 @@
 @import url(./__amount-num/product__amount-num.css);
 @import url(./__description/product__description.css);
 @import url(./__add-to-cart-btn/product__add-to-cart-btn.css);
+@import url(./__amount/product__amount.css);
+@import url(./__remove-btn/product__remove-btn.css);
+@import url(./__price-for-each/product__price-for-each.css);
+@import url(./__price-info/product__price-info.css);
 
 .product {
   background-color: #fff;

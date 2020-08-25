@@ -18,6 +18,12 @@
 
 @media (min-width: 768px) {
   .cart-summary {
-    min-width: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cart-summary {
+    width: 300px;
   }
 }

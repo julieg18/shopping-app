@@ -1,3 +1,13 @@
 .product__price {
   font-weight: 500;
 }
+
+.product_place_cart .product__price {
+  grid-area: price;
+}
+
+@media (min-width: 1024px) {
+  .product_place_cart .product__price {
+    font-size: 1.2rem;
+  }
+}

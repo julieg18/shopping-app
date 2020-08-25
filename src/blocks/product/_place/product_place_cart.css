@@ -1,0 +1,12 @@
+.product_place_cart {
+  display: grid;
+  grid-template-areas: 'image name price-info' 'image size price-info' 'image . amount' 'image . remove-btn';
+  grid-template-columns: 100px auto auto;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .product_place_cart {
+    grid-template-columns: 150px auto auto;
+  }
+}

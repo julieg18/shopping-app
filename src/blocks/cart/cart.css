@@ -7,8 +7,15 @@
 
 @media (min-width: 768px) {
   .cart {
-    padding: 0;
     display: grid;
     grid-template-areas: 'title cart-summary' 'products cart-summary' 'continue-shopping-link cart-summary';
+    grid-template-columns: calc(100% - 280px) 280px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cart {
+    grid-template-columns: calc(100% - 330px) 330px;
   }
 }
