@@ -5,16 +5,23 @@ import filterProductsInputs from '../components/filterProductsInputs';
 import Product from '../components/Product';
 import Notification from '../components/Notification';
 import { productsInfo, productsNoResultText } from '../utils/constants';
+import { getCartAmount, getCartSubtotal } from '../utils/cartItems';
 import { formatNumberToCurrency } from '../utils/utils';
 
-let cartSubtotal = 0;
-
 let productEls;
+let cartSubtotal = 0;
 const products = [];
 const appliedProductFilters = {
   searchInput: '',
   tags: [],
 };
+const cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
+
+function fillPageWithInitialData() {
+  cartButtonAmount.setAmount(getCartAmount(cartItems));
+  cartSubtotal = getCartSubtotal(cartItems);
+}
+fillPageWithInitialData();
 
 function checkForNoProductResults() {
   const areAllProductsHidden = productEls.every((productEl) =>
@@ -47,13 +54,7 @@ function handleOptionInputClick(filterProductsCheckboxInputs) {
   checkForNoProductResults();
 }
 
-function addToCart({ amount, id }) {
-  cartButtonAmount.increaseAmount(amount);
-
-  cartSubtotal +=
-    Number(productsInfo.find((product) => product.id === id).price.slice(1)) *
-    amount;
-
+function showCartNotification(amount) {
   const addToCartNotification = new Notification({
     type: 'info',
     imageName: 'shopping-cart',
@@ -65,6 +66,19 @@ function addToCart({ amount, id }) {
   setTimeout(() => {
     addToCartNotification.showNotification();
   }, 0);
+}
+
+function addToCart({ amount, id }) {
+  cartButtonAmount.increaseAmount(amount);
+
+  cartSubtotal +=
+    Number(productsInfo.find((product) => product.id === id).price.slice(1)) *
+    amount;
+
+  showCartNotification(amount);
+
+  cartItems[id] = cartItems[id] ? cartItems[id] + amount : amount;
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
 
 productsInfo.forEach((productInfo) => {
