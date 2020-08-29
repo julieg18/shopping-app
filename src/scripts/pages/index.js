@@ -2,9 +2,10 @@ import '@babel/polyfill';
 import '../../pages/index.css';
 import cartButtonAmount from '../components/cartButtonAmount';
 import filterProductsInputs from '../components/filterProductsInputs';
-import Product from '../components/Product';
+import AvailableProduct from '../components/AvailableProduct';
 import Notification from '../components/Notification';
-import { productsInfo, productsNoResultText } from '../utils/constants';
+import { productsNoResultText } from '../utils/constants';
+import productsInfo from '../utils/productsInfo';
 import { getCartAmount, getCartSubtotal } from '../utils/cartItems';
 import { formatNumberToCurrency } from '../utils/utils';
 
@@ -71,9 +72,9 @@ function showCartNotification(amount) {
 function addToCart({ amount, id }) {
   cartButtonAmount.increaseAmount(amount);
 
-  cartSubtotal +=
-    Number(productsInfo.find((product) => product.id === id).price.slice(1)) *
-    amount;
+  cartSubtotal += Number(
+    productsInfo.find((product) => product.id === id).price,
+  );
 
   showCartNotification(amount);
 
@@ -82,9 +83,10 @@ function addToCart({ amount, id }) {
 }
 
 productsInfo.forEach((productInfo) => {
-  const newProduct = new Product({
+  const newProduct = new AvailableProduct({
     ...productInfo,
     addToCart,
+    templateSelector: '#product',
   });
   newProduct.createProduct();
   products.push(newProduct);
