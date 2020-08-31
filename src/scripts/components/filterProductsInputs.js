@@ -3,7 +3,7 @@ import {
   filterProductsCheckboxInputs,
   searchBar,
   searchInput,
-} from '../utils/constants';
+} from '../utils/indexConstants';
 
 function triggerInputClick(e) {
   const input = e.currentTarget.querySelector('input');

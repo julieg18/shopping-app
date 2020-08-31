@@ -1,4 +1,4 @@
-import { navCartBtnAmount } from '../utils/constants';
+import { navCartBtnAmount } from '../utils/indexConstants';
 
 const cartButtonAmount = {
   getAmount: () => Number(navCartBtnAmount.textContent),
