@@ -15,7 +15,7 @@ function getCartSubtotal(cartItems) {
   const cartPrices = Object.keys(cartItems).map((itemId) =>
     getCartItemPrice({ id: itemId, amount: cartItems[itemId] }),
   );
-  return cartPrices.reduce((p1, p2) => p1 * p2);
+  return cartPrices.reduce((p1, p2) => p1 + p2);
 }
 
 function getCartAmount(cartItems) {
