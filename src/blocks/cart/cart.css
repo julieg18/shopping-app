@@ -1,4 +1,5 @@
 @import url(./__title/cart__title.css);
+@import url(./__user-options/cart__user-options.css);
 @import url(./__continue-shopping-link/cart__continue-shopping-link.css);
 
 .cart {
@@ -8,7 +9,7 @@
 @media (min-width: 768px) {
   .cart {
     display: grid;
-    grid-template-areas: 'title cart-summary' 'products cart-summary' 'continue-shopping-link cart-summary';
+    grid-template-areas: 'title cart-summary' 'products cart-summary' 'user-options cart-summary';
     grid-template-columns: calc(100% - 280px) 280px;
     padding: 0;
   }
