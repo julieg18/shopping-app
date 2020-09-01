@@ -1,4 +1,4 @@
-import productsInfo from './productsInfo';
+import productsInfo from '../productsInfo';
 
 function getCartItem(id) {
   return productsInfo.find((item) => item.id === id);

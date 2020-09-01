@@ -4,9 +4,9 @@ import cartButtonAmount from '../components/cartButtonAmount';
 import filterProductsInputs from '../components/filterProductsInputs';
 import AvailableProduct from '../components/AvailableProduct';
 import Notification from '../components/Notification';
-import { productsNoResultText } from '../utils/indexConstants';
+import { productsNoResultText } from '../utils/index/constants';
 import productsInfo from '../utils/productsInfo';
-import { getCartAmount, getCartSubtotal } from '../utils/cartItems';
+import { getCartAmount, getCartSubtotal } from '../utils/cart/cartItems';
 import { formatNumberToCurrency } from '../utils/utils';
 
 let productEls;

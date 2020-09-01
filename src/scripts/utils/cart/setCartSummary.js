@@ -2,8 +2,8 @@ import {
   cartSummarySubtotalPrice,
   cartSummaryTaxesAndFeesPrice,
   cartSummaryTotalPrice,
-} from './cartConstants';
-import { formatNumberToCurrency } from './utils';
+} from './constants';
+import { formatNumberToCurrency } from '../utils';
 
 let cartItemsPrices = {};
 

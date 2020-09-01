@@ -1,8 +1,8 @@
 import '@babel/polyfill';
 import '../../pages/cart.css';
 import CartProduct from '../components/CartProduct';
-import setCartSummary from '../utils/setCartSummary';
-import { getCartItem, getCartItemPrice } from '../utils/cartItems';
+import setCartSummary from '../utils/cart/setCartSummary';
+import { getCartItem, getCartItemPrice } from '../utils/cart/cartItems';
 
 const cartItems = JSON.parse(localStorage.getItem('cartItems'));
 let updatedCartItems = {};
