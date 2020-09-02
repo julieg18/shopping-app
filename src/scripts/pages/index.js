@@ -1,6 +1,9 @@
 import '@babel/polyfill';
 import '../../pages/index.css';
-import cartButtonAmount from '../components/cartButtonAmount';
+import {
+  increaseCartBtnAmount,
+  setCartBtnAmount,
+} from '../utils/index/cartButtonAmount';
 import filterProductsInputs from '../components/filterProductsInputs';
 import AvailableProduct from '../components/AvailableProduct';
 import Notification from '../components/Notification';
@@ -19,7 +22,7 @@ const appliedProductFilters = {
 const cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
 
 function fillPageWithInitialData() {
-  cartButtonAmount.setAmount(getCartAmount(cartItems));
+  setCartBtnAmount(getCartAmount(cartItems));
   cartSubtotal = getCartSubtotal(cartItems);
 }
 fillPageWithInitialData();
@@ -70,7 +73,7 @@ function showCartNotification(amount) {
 }
 
 function addToCart({ amount, id }) {
-  cartButtonAmount.increaseAmount(amount);
+  increaseCartBtnAmount(amount);
 
   cartSubtotal += Number(
     productsInfo.find((product) => product.id === id).price,
