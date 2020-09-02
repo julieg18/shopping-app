@@ -4,7 +4,7 @@ import {
   increaseCartBtnAmount,
   setCartBtnAmount,
 } from '../utils/index/cartButtonAmount';
-import filterProductsInputs from '../components/filterProductsInputs';
+import setUpFilterProductsInputsEventListeners from '../utils/index/filterProductsInputs';
 import AvailableProduct from '../components/AvailableProduct';
 import Notification from '../components/Notification';
 import { productsNoResultText } from '../utils/index/constants';
@@ -96,7 +96,7 @@ productsInfo.forEach((productInfo) => {
 });
 productEls = Array.from(document.querySelectorAll('.product'));
 
-filterProductsInputs.setupEventListeners({
+setUpFilterProductsInputsEventListeners({
   handleSearchInput,
   handleOptionInputClick,
 });
