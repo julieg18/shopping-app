@@ -37,6 +37,14 @@ class CartProduct extends Product {
     this._product.querySelector(
       '.product__amount-num',
     ).textContent = this._amount;
+
+    this._product.querySelector(
+      '.product__change-amount-btn_action_increase',
+    ).disabled = this._amount === 99;
+
+    this._product.querySelector(
+      '.product__change-amount-btn_action_decrease',
+    ).disabled = this._amount === 1;
   }
 
   _setUpEventListeners() {
