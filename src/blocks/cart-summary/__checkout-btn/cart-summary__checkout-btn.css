@@ -14,3 +14,8 @@
   background-color: rgba(175, 201, 126, 0.8);
   cursor: pointer;
 }
+
+.cart-summary__checkout-btn:disabled {
+  background-color: #bebebe;
+  cursor: default;
+}

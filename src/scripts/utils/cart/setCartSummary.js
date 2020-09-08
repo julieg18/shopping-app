@@ -2,6 +2,7 @@ import {
   cartSummarySubtotalPrice,
   cartSummaryTaxesAndFeesPrice,
   cartSummaryTotalPrice,
+  cartSummaryCheckoutBtn,
 } from './constants';
 import { formatNumberToCurrency } from '../utils';
 
@@ -16,6 +17,7 @@ const cartSummaryPrices = {
 function setCartSummaryPrices() {
   cartSummaryPrices.subtotal = Object.values(cartItemsPrices).reduce(
     (p1, p2) => p1 + p2,
+    0,
   );
   cartSummaryPrices.taxesAndFees =
     cartSummaryPrices.subtotal + cartSummaryPrices.subtotal * 0.042;
@@ -23,7 +25,7 @@ function setCartSummaryPrices() {
     cartSummaryPrices.subtotal + cartSummaryPrices.taxesAndFees;
 }
 
-function setCartSummaryPriceElements() {
+function setCartSummaryElements() {
   const { subtotal, taxesAndFees, total } = cartSummaryPrices;
 
   cartSummarySubtotalPrice.textContent = formatNumberToCurrency(subtotal);
@@ -31,6 +33,7 @@ function setCartSummaryPriceElements() {
     taxesAndFees,
   );
   cartSummaryTotalPrice.textContent = formatNumberToCurrency(total);
+  cartSummaryCheckoutBtn.disabled = subtotal === 0;
 }
 
 function setCartSummary(cartItems) {
@@ -41,7 +44,7 @@ function setCartSummary(cartItems) {
   });
 
   setCartSummaryPrices();
-  setCartSummaryPriceElements();
+  setCartSummaryElements();
 }
 
 export default setCartSummary;
