@@ -22,6 +22,9 @@ class AvailableProduct extends Product {
     this._product.querySelector(
       '.product__change-amount-btn_action_decrease',
     ).disabled = true;
+    this._product.querySelector(
+      '.product__change-amount-btn_action_increase',
+    ).disabled = false;
   }
 
   _placeDataInProductElement() {
