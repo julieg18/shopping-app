@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.product_place_cart .product__amount-num {
+  margin: 0 5px;
+}
+
 @media (min-width: 1024px) {
   .product_place_cart .product__amount-num {
     font-size: 1.2rem;
