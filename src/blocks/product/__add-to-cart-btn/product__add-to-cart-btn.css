@@ -15,3 +15,8 @@
   cursor: pointer;
   background-color: rgba(175, 201, 126, 0.8);
 }
+
+.product__add-to-cart-btn:disabled {
+  background-color: #bebebe;
+  cursor: default;
+}
