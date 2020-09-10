@@ -83,11 +83,15 @@ function addToCart({ amount, id }) {
 
   cartItems[id] = cartItems[id] ? cartItems[id] + amount : amount;
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  const selectedProduct = products.find((product) => product.id === id);
+  selectedProduct.updateMaxAmount(99 - cartItems[id]);
 }
 
 productsInfo.forEach((productInfo) => {
+  const maxAmount = 99 - (cartItems[productInfo.id] || 0);
   const newProduct = new AvailableProduct({
     ...productInfo,
+    maxAmount,
     addToCart,
     templateSelector: '#product',
   });

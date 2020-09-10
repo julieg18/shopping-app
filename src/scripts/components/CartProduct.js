@@ -40,7 +40,7 @@ class CartProduct extends Product {
 
     this._product.querySelector(
       '.product__change-amount-btn_action_increase',
-    ).disabled = this._amount === 99;
+    ).disabled = this._amount === this.maxAmount;
 
     this._product.querySelector(
       '.product__change-amount-btn_action_decrease',

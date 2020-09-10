@@ -10,6 +10,14 @@ class AvailableProduct extends Product {
     this._tags = tags;
   }
 
+  _updateProductBasedOnMaxAmount() {
+    this._product.querySelector('.product__add-to-cart-btn').disabled =
+      this.maxAmount === 0;
+    this._product.querySelector(
+      '.product__change-amount-btn_action_increase',
+    ).disabled = this.maxAmount === 0;
+  }
+
   _handleAddToCartBtnClick() {
     const amountNum = this._product.querySelector('.product__amount-num');
     const product = {
@@ -22,9 +30,6 @@ class AvailableProduct extends Product {
     this._product.querySelector(
       '.product__change-amount-btn_action_decrease',
     ).disabled = true;
-    this._product.querySelector(
-      '.product__change-amount-btn_action_increase',
-    ).disabled = false;
   }
 
   _placeDataInProductElement() {
@@ -58,6 +63,12 @@ class AvailableProduct extends Product {
       .addEventListener('click', () => this._handleAddToCartBtnClick());
   }
 
+  updateMaxAmount(newAmount) {
+    this.maxAmount = newAmount;
+
+    this._updateProductBasedOnMaxAmount();
+  }
+
   filter({ searchInput, tags }) {
     const matchesSearchInput = this._name
       .toLowerCase()
@@ -70,6 +81,12 @@ class AvailableProduct extends Product {
     } else {
       this._product.classList.add('product_hide');
     }
+  }
+
+  createProduct() {
+    super.createProduct();
+
+    this._updateProductBasedOnMaxAmount();
   }
 }
 

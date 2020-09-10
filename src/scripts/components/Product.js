@@ -1,12 +1,21 @@
 import { formatNumberToCurrency } from '../utils/utils';
 
 class Product {
-  constructor({ id, name, price, size, imageSrc, templateSelector }) {
+  constructor({
+    id,
+    name,
+    price,
+    size,
+    imageSrc,
+    maxAmount = 99,
+    templateSelector,
+  }) {
     this.id = id;
     this._name = name;
     this._price = price;
     this._size = size;
     this._imageSrc = imageSrc;
+    this.maxAmount = maxAmount;
     this._productTemplate = document.querySelector(templateSelector).content;
   }
 
@@ -20,7 +29,7 @@ class Product {
     ).disabled = Number(amountNum.textContent) === 1;
     this._product.querySelector(
       '.product__change-amount-btn_action_increase',
-    ).disabled = Number(amountNum.textContent) === 99;
+    ).disabled = Number(amountNum.textContent) === this.maxAmount;
   }
 
   _placeDataInProductElement() {
