@@ -1,0 +1,30 @@
+.cart__clear-cart-btn {
+  align-items: center;
+  background-color: #afc97e;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  display: flex;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 500;
+  padding: 10px;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.cart__clear-cart-btn:hover {
+  background-color: rgba(175, 201, 126, 0.8);
+  cursor: pointer;
+}
+
+.cart__clear-cart-btn:disabled {
+  background-color: #bebebe;
+  cursor: default;
+}
+
+@media (min-width: 375px) {
+  .cart__clear-cart-btn {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}

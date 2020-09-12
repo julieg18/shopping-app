@@ -1,6 +1,8 @@
 @import url(./__title/cart__title.css);
 @import url(./__user-options/cart__user-options.css);
 @import url(./__continue-shopping-link/cart__continue-shopping-link.css);
+@import url(./__clear-cart-btn/cart__clear-cart-btn.css);
+@import url(./__clear-cart-btn-icon/cart__clear-cart-btn-icon.css);
 
 .cart {
   padding: 15px 0 0;

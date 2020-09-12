@@ -21,6 +21,6 @@
 
 @media (min-width: 1024px) {
   .products_place_cart {
-    height: calc(100vh - 3.5rem - 65px);
+    height: calc(100vh - 3.5rem - 68px);
   }
 }
