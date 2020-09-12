@@ -5,9 +5,15 @@
 }
 
 .product_place_cart .product__name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   grid-area: name;
   margin: 0 0 0 5px;
+}
+
+@media (min-width: 375px) {
+  .product_place_cart .product__name {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 425px) {
