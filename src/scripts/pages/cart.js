@@ -1,6 +1,7 @@
 import '@babel/polyfill';
 import '../../pages/cart.css';
 import CartProduct from '../components/CartProduct';
+import Notification from '../components/Notification';
 import setCartSummary from '../utils/cart/setCartSummary';
 import { cartClearBtn } from '../utils/cart/constants';
 import { getCartItem, getCartItemPrice } from '../utils/cart/cartItems';
@@ -8,6 +9,17 @@ import { getCartItem, getCartItemPrice } from '../utils/cart/cartItems';
 const cartItems = JSON.parse(localStorage.getItem('cartItems'));
 let updatedCartItems = [];
 let cartProducts = [];
+
+function showShoppingCartNotification(text) {
+  const addToCartNotification = new Notification({
+    type: 'info',
+    imageName: 'shopping-cart',
+  });
+  addToCartNotification.createNotification({ text });
+  setTimeout(() => {
+    addToCartNotification.showNotification();
+  }, 0);
+}
 
 function setUpdatedCartItems() {
   updatedCartItems = Object.keys(cartItems).map((id) => {
@@ -27,6 +39,9 @@ function removeProduct(id) {
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
   setUpdatedCartItems();
   setCartSummary(updatedCartItems);
+  showShoppingCartNotification(
+    `${getCartItem(id).name} have been removed from cart.`,
+  );
 }
 
 function changeProductAmount({ id, amount }) {
@@ -43,6 +58,8 @@ function clearCart() {
   cartProducts.forEach((cartProduct) => {
     cartProduct.remove();
   });
+
+  showShoppingCartNotification('Cart has been cleared.');
 }
 
 setUpdatedCartItems();

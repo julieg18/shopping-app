@@ -7,3 +7,6 @@
 @import url(../blocks/products/_place/products_place_cart.css);
 @import url(../blocks/product/product.css);
 @import url(../blocks/product/_place/product_place_cart.css);
+@import url(../blocks/notification/notification.css);
+@import url(../blocks/notification/_type/notification_type_info.css);
+@import url(../blocks//notification/_visible/notification_visible.css);
