@@ -2,10 +2,12 @@ import '@babel/polyfill';
 import '../../pages/cart.css';
 import CartProduct from '../components/CartProduct';
 import setCartSummary from '../utils/cart/setCartSummary';
+import { cartClearBtn } from '../utils/cart/constants';
 import { getCartItem, getCartItemPrice } from '../utils/cart/cartItems';
 
 const cartItems = JSON.parse(localStorage.getItem('cartItems'));
-let updatedCartItems = {};
+let updatedCartItems = [];
+let cartProducts = [];
 
 function setUpdatedCartItems() {
   updatedCartItems = Object.keys(cartItems).map((id) => {
@@ -18,9 +20,6 @@ function setUpdatedCartItems() {
     };
   });
 }
-
-setUpdatedCartItems();
-setCartSummary(updatedCartItems);
 
 function removeProduct(id) {
   delete cartItems[id];
@@ -37,7 +36,19 @@ function changeProductAmount({ id, amount }) {
   setCartSummary(updatedCartItems);
 }
 
-const cartProducts = updatedCartItems.map(
+function clearCart() {
+  localStorage.setItem('cartItems', JSON.stringify({}));
+  updatedCartItems = [];
+  setCartSummary(updatedCartItems);
+  cartProducts.forEach((cartProduct) => {
+    cartProduct.remove();
+  });
+}
+
+setUpdatedCartItems();
+setCartSummary(updatedCartItems);
+
+cartProducts = updatedCartItems.map(
   (updatedCardItem) =>
     new CartProduct({
       ...updatedCardItem,
@@ -50,3 +61,5 @@ const cartProducts = updatedCartItems.map(
 cartProducts.forEach((cartProduct) => {
   cartProduct.createProduct();
 });
+
+cartClearBtn.addEventListener('click', clearCart);

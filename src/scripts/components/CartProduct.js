@@ -57,6 +57,10 @@ class CartProduct extends Product {
         this._product.remove();
       });
   }
+
+  remove() {
+    this._product.remove();
+  }
 }
 
 export default CartProduct;
