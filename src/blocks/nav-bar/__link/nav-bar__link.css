@@ -1,0 +1,11 @@
+.nav-bar__link {
+  color: #000;
+  font-size: 30px;
+  transform: scale(1);
+  transition: transform ease-in-out 0.2s;
+}
+
+.nav-bar__link:hover {
+  cursor: pointer;
+  transform: scale(1.12);
+}

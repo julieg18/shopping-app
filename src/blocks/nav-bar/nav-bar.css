@@ -1,12 +1,12 @@
 @import url(./__title/nav-bar__title.css);
-@import url(./__cart-link/nav-bar__cart-link.css);
+@import url(./__link/nav-bar__link.css);
 @import url(./__cart-button/nav-bar__cart-button.css);
 @import url(./__cart-amount/nav-bar__cart-amount.css);
 
 .nav-bar {
-  display: grid;
-  grid-template-areas: '. title cart-link';
-  grid-template-columns: repeat(3, 1fr);
-  padding-top: 15px;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 0;
   text-align: center;
 }

@@ -2,15 +2,10 @@
   background: none;
   border: none;
   display: flex;
-  font-size: 30px;
-  margin-right: 15px;
   padding: 0;
   position: relative;
-  transform: scale(1);
-  transition: transform ease-in-out 0.2s;
 }
 
 .nav-bar__cart-button:hover {
   cursor: pointer;
-  transform: scale(1.12);
 }
