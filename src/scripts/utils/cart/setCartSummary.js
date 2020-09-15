@@ -19,8 +19,7 @@ function setCartSummaryPrices() {
     (p1, p2) => p1 + p2,
     0,
   );
-  cartSummaryPrices.taxesAndFees =
-    cartSummaryPrices.subtotal + cartSummaryPrices.subtotal * 0.042;
+  cartSummaryPrices.taxesAndFees = cartSummaryPrices.subtotal * 0.042;
   cartSummaryPrices.total =
     cartSummaryPrices.subtotal + cartSummaryPrices.taxesAndFees;
 }
